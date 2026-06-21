@@ -1,0 +1,15 @@
+name: Greeting Workflow
+
+on:
+  push:
+
+env:
+  COMPANY: "WCD Bank"
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Deploying resources for $COMPANY"
